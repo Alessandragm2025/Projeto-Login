@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../assets/css/ligin.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+
+    <script src="../assets/js/mostraSenha.js" defer></script>
+    <script src="../assets/js/recupera.js" defer></script>
+
+    <title>Projrto Login | Recuperar Senha</title>
+</head>
+
+<body>
+
+    <main class="login">
+
+        <img src="https://img.freepik.com/vetores-gratis/fundo-de-tecnologia-moderno-abstrato-com-conexoes-de-rede_1048-12878.jpg?semt=ais_hybrid&w=740"
+            alt="imagem de background" class="login__img">
+
+        <form class="login__form" id="recover-form">
+
+            <h1 class="login__title">Recuperar Senha</h1>
+
+            <br><br>
+
+            <div class="login__content" >
+
+                <div class="login__box" id="email-field">
+
+                    <i class="ri-mail-line login__icon"></i>
+
+                    <div class="login__box-input">
+                        <input type="email" id="recover-email" class="login__input" required placeholder="">
+
+                        <label for="recover-email" class="login__label">E-mail</label>
+                    </div>
+
+
+                </div>
+                <button type="submit" class="login__button" id="send-code-button">Send code</button>
+            </div>
+
+            <div id="code-entry-section" style="display: none;">
+                <p class="login__info-text">
+                    Um código foi "enviado" para o seu e-mail. Por favor, digite-o abaixo.
+                </p>
+
+                <br><br>
+
+                <div class="login__box">
+
+                    <i class="ri-key-line login__icon"></i>
+                    <div class="login__box-input">
+
+                        <input type="text" id="verification-code" class="login__input" required placeholder=""
+                            minlength="6">
+
+                        <label for="lverification-code" class="login__label">Verification-Code</label>
+
+                    </div>
+                </div>
+
+                <br><br>
+
+                <div class="login__box">
+
+                    <i class="ri-lock-2-line login__icon"></i>
+
+                    <div class="login__box-input">
+
+                        <input type="password" id="login-pass" class="login__input" required placeholder="">
+                        <label for="login-pass" class="login__label">New Password</label>
+
+                        <i class="ri-eye-off-line login__eye" id="login-eye"></i>
+                    </div>
+                </div>
+
+                <br><br>
+
+                <div class="login__box">
+
+                    <i class="ri-lock-2-line login__icon"></i>
+
+                    <div class="login__box-input">
+
+                        <input type="password" id="login-pass-confirm" class="login__input" required placeholder="">
+                        <label for="login-pass-confirm" class="login__label">Confirm New Password</label>
+
+                        <i class="ri-eye-off-line login__eye" id="login-eye-confirm"></i>
+                    </div>
+                </div>
+
+                <br>
+
+                <button type="button" class="login__button" id="verify-code-button">Reset password</button>
+
+                <p class="login__register">
+                    have an account?
+                    <a href="../index.html">login</a>
+                </p>
+            </div>
+
+        </form>
+    </main>
+
+
+</body>
+
+</html>
